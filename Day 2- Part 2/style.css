@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width:100%;
+}
+#box{
+  background-color: red;
+  height:100px;
+  width: 100px;
+}
+#circle{
+  background-color: pink;
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+}

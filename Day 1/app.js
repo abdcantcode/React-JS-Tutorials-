@@ -7,3 +7,8 @@ let a=10;
 export default a;
 
 //abhi mai aur ek default export nai kar saktoun 
+
+
+export let normalxportvariable=20;
+//aisa hota normal export yeh kitne bhi kar sakte mama 
+export let dusranallu=30;

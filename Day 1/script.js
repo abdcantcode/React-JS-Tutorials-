@@ -10,7 +10,7 @@ import { normalxportvariable, dusranallu} from './app.js';
 //import karru so file mein mai kubh bhi naam se le saktu default export vaale variable ku
 console.log(defexportvariable);
 
-console.log(normalxportvariable);
+console.log(normalxportvariable,dusranallu);
 
 //named export ku normal export bhi bolte re baba
 

@@ -11,3 +11,11 @@
 // h1.innerHTML='Kya bolte ho ladlo';
 // let body=document.querySelector('body');
 // body.appendChild(h1);
+
+//Trying to the same using react js basically
+let h1=React.createElement('h1',null,"Mai hu abdullah lala");
+//body ku kabhi bhi root nai banana lala
+let dabba=document.querySelector('.container');
+var root=ReactDOM.createRoot(dabba);
+root.render(h1);
+//Crazy kardiye khaliiiiiiii

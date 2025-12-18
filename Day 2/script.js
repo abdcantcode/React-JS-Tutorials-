@@ -19,3 +19,12 @@ let dabba=document.querySelector('.container');
 var root=ReactDOM.createRoot(dabba);
 root.render(h1);
 //Crazy kardiye khaliiiiiiii
+
+let h2=React.createElement('h2',{className:'nallu'},"This is a h2");//yeh id ya classname dene ku kaam mein aata 
+root.render(h2);
+// root.render(h1,div);//Yeh kaam nai karta
+// root.render([h2,h1])//Yeh kar sakte lekin yeh sahi nai h ig... Lekin yeh karne se better yeh hai ki
+
+//toh aap ab yeh karo ki h1 aur h2 ke liye ek div lelo basically
+let div=React.createElement('div',null,[h1,h2])
+root.render(div); //Yeh hai best tareekha according to the abdullah don

@@ -27,3 +27,17 @@ rafce use karte jao woh file ke name ke hisab se function banane
 React Arrow Function Component Export hai uska full form 
 
 components ka pehla letter capital rakhna chahiye 
+
+function ku app() aisa call karne ke badle <App /> aisa bhi call kar sakte
+
+App.css ke saath fahh hogaya hai guys 
+
+css link bhi kar sakte tum ya phir aisa import karle sakte main.jsx mein jaisa apan kare kirrak hai na apan kardete khali crazy
+
+assets mein fonts, etc ku rakhte apan 
+
+public mein bhi assets ich rakhte magar generally use hote so aur public rakh sakte so waale basically 
+
+//Extensions:
+simple react snippets 
+es7 native snippets wala

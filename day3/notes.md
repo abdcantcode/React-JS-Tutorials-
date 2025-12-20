@@ -20,5 +20,10 @@ Ismein bohot easy hai elements banana
 function abcd=()=>{
   return <div> Mera div </div>
 }
+Yeh hai jsx ka kamaal functions se html return kar sakte basically apan 
 aisa karle sakte aur dusri file mein export karo udhar import karke use karlo mast 
 
+rafce use karte jao woh file ke name ke hisab se function banane 
+React Arrow Function Component Export hai uska full form 
+
+components ka pehla letter capital rakhna chahiye 

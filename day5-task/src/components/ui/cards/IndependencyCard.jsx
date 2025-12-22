@@ -3,9 +3,9 @@ import LearnMoreDiv from '../learn more div/LearnMoreDiv'
 
 const IndependencyCard = () => {
   return (
-    <div>
-      <h2>INDEPENDENCY</h2>
-      <h4>Explore the creativity of independendent designers from around the globe</h4>
+    <div className='flex gap-8 flex-col bg-gray-300 p-7 rounded-lg w-[24%]'>
+      <h2 className='text-white font-extralight text-[20px]'>INDEPENDENCY</h2>
+      <h4 className='text-white text-[14px]'>Explore the creativity of independendent designers from around the globe</h4>
       <LearnMoreDiv />
     </div>
   )

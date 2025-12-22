@@ -1,0 +1,14 @@
+import React from 'react'
+import LearnMoreDiv from '../learn more div/LearnMoreDiv'
+
+const UniquityCard = () => {
+  return (
+    <div className='flex gap-8 flex-col bg-gray-300 p-7 rounded-lg flex-1'>
+          <h2 className='text-white font-extralight text-[20px]'>UNIQUITY</h2>
+          <h4 className='text-white text-[14px]'>Discover the charm of unique pieces that stand out effortlessly</h4>
+          <LearnMoreDiv />
+        </div>
+  )
+}
+
+export default UniquityCard

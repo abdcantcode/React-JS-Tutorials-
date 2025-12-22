@@ -1,10 +1,14 @@
-import IndependencyCard from "./components/ui/cards/IndependencyCard"
-import LearnMoreDiv from "./components/ui/learn more div/LearnMoreDiv"
+import InformationSection from "./components/layout/navbar/InformationSection"
+import Navbar from "./components/layout/navbar/Navbar"
+
+
 
 const App = () => {
   return (
     <div>
-      <IndependencyCard />
+      
+      <InformationSection />
+      
     </div>
   )
 }

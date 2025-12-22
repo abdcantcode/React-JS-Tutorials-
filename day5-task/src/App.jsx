@@ -1,12 +1,9 @@
-import React from 'react'
+import LearnMoreDiv from "./components/ui/learn more div/LearnMoreDiv"
 
-import GetInTouchButton from './components/ui/buttons/GetInTouchButton'
-import RightNav from './components/ui/right/RightNav'
-import Navbar from './components/layout/navbar/Navbar'
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <LearnMoreDiv />
     </div>
   )
 }

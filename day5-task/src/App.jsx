@@ -8,18 +8,15 @@ import IndependentDesigners from "./components/ui/cards/IndependentDesigners"
 import ClientsDiv from "./components/ui/info div/ClientsDiv"
 import DesignersDiv from "./components/ui/info div/DesignersDiv"
 import MasterPieces from "./components/ui/info div/MasterPieces"
-
+import Hero from "./components/layout/navbar/Hero"
 
 
 const App = () => {
   return (
     <div>
       
-      
-      
-      <Grid1/>
-      
-      
+       
+      <Hero/>
     </div>
   )
 }

@@ -11,8 +11,6 @@ const Grid1 = () => {
     <div className='grid grid-cols-2 grid-rows-2 gap-6 p-10  '>
       <Image1Card/>
       <IndependentDesigners/>
-      <ExclusiveCard/><Image1Card/>
-      <IndependentDesigners/>
       <ExclusiveCard/>
       
       

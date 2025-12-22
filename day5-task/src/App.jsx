@@ -9,14 +9,21 @@ import ClientsDiv from "./components/ui/info div/ClientsDiv"
 import DesignersDiv from "./components/ui/info div/DesignersDiv"
 import MasterPieces from "./components/ui/info div/MasterPieces"
 import Hero from "./components/layout/navbar/Hero"
+import AboutCard from "./components/ui/cards/AboutCard"
+import About from "./components/layout/navbar/About"
 
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-black">
       
-       
-      <Hero/>
+       <Navbar/>
+       <Hero/>
+       <InformationSection/>
+       <DummyTypaSection/>
+
+      <About/>
+      <Grid1/>
     </div>
   )
 }

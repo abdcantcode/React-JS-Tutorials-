@@ -8,7 +8,7 @@ import GetInTouchButton from '../buttons/GetInTouchButton'
 
 const RightNav = () => {
   return (
-    <div className='flex gap-x-1 p-2'>
+    <div className='flex gap-x-1'>
       <DesignersButton />
       <CollabsButton />
       <EventsButton />

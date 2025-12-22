@@ -2,9 +2,6 @@ import React from 'react'
 import Image1Card from '../../ui/cards/Image1Card'
 import IndependentDesigners from '../../ui/cards/IndependentDesigners'
 import ExclusiveCard from '../../ui/cards/ExclusiveCard'
-import Image2Card from '../../ui/cards/Image2Card'
-import HighQualityCard from '../../ui/cards/HighQualityCard'
-import EcoFriendlyCard from '../../ui/cards/EcoFriendlyCard'
 
 const Grid1 = () => {
   return (

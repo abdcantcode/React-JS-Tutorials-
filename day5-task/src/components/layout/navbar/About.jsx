@@ -4,7 +4,7 @@ import HeroImage from '../../ui/cards/HeroImage'
 
 const About = () => {
   return (
-    <div className='grid grid-cols-2 w-screen gap-5 p-5'>
+    <div className='grid grid-cols-2 w-full gap-5 px-5'>
       <AboutCard/>
       
       <HeroImage/>

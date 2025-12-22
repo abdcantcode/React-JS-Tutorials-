@@ -1,7 +1,6 @@
 import React from 'react'
 import ExploreDiv from '../explore div/ExploreDiv'
-
-const IndependentDesigners = () => {
+const EcoFriendlyCard = () => {
   return (
     <div className='p-10 rounded-lg bg-gray-400 flex gap-6 text-white  row-span-1'>
       <div className='flex flex-col gap-6'>
@@ -16,4 +15,4 @@ const IndependentDesigners = () => {
   )
 }
 
-export default IndependentDesigners
+export default EcoFriendlyCard

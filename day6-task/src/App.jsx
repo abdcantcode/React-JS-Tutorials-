@@ -1,55 +1,107 @@
-
+import Card from './components/Card'
 import './index.css'
 const App = () => {
-  return (
-    <div className='bg-white w-full h-full px-10 py-10 '>
-      <div className='w-55 bg-white rounded-3xl h-75 pt-0.5 relative shadow-[0_15px_40px_rgba(0,0,0,0.15)]'>
-        
-        <div className='w-[98%] h-[37%] rounded-3xl bg-red-600 m-auto'>
-          <img className='w-full h-full object-center object-cover rounded-3xl  ' src="https://images.pexels.com/photos/19670/pexels-photo.jpg" alt="" />
-        </div>
+  let users = [
+    {
+      "name": "Noah Thompson",
+      "role": "Product Designer focused on simplicity & usability",
+      "profilePhoto": "https://images.unsplash.com/photo-1603415526960-f9e4b2dae5e6?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&h=300",
+      "likes": "72.9K",
+      "posts": "828",
+      "views": "342.9K"
+    },
+    {
+      "name": "Liam Carter",
+      "role": "Product & UX Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1506015391300-4802dc74de2d?fit=crop&w=800&h=300",
+      "likes": "81.3K",
+      "posts": "755",
+      "views": "389.0K"
+    },
+    {
+      "name": "Emma Johnson",
+      "role": "Lead Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1521790945508-bf2a36314e85?fit=crop&w=800&h=300",
+      "likes": "64.7K",
+      "posts": "699",
+      "views": "310.2K"
+    },
+    {
+      "name": "Olivia Smith",
+      "role": "UI/UX & Interaction Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=800&h=300",
+      "likes": "78.2K",
+      "posts": "812",
+      "views": "344.5K"
+    },
+    {
+      "name": "Ethan Brown",
+      "role": "Creative Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=800&h=300",
+      "likes": "69.9K",
+      "posts": "778",
+      "views": "321.9K"
+    },
+    {
+      "name": "Ava Wilson",
+      "role": "Interaction & Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=800&h=300",
+      "likes": "84.1K",
+      "posts": "834",
+      "views": "368.8K"
+    },
+    {
+      "name": "Mason Davis",
+      "role": "Minimalist Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=800&h=300",
+      "likes": "91.6K",
+      "posts": "895",
+      "views": "402.1K"
+    },
+    {
+      "name": "Sophia Martinez",
+      "role": "UX & Product Strategy",
+      "profilePhoto": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?fit=crop&w=800&h=300",
+      "likes": "76.4K",
+      "posts": "802",
+      "views": "350.7K"
+    },
+    {
+      "name": "James Miller",
+      "role": "Senior Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=800&h=300",
+      "likes": "88.9K",
+      "posts": "860",
+      "views": "377.3K"
+    },
+    {
+      "name": "Isabella Garcia",
+      "role": "Lead UX & Product Designer",
+      "profilePhoto": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=faces&fit=crop&w=200&h=200",
+      "coverPhoto": "https://images.unsplash.com/photo-1506765515384-028b60a970df?fit=crop&w=800&h=300",
+      "likes": "93.5K",
+      "posts": "910",
+      "views": "418.0K"
+    }
+  ]
 
-        <div className='rounded-full h-17 w-17 bg-red-300 border-4 border-white absolute top-[23%] left-[50%] translate-x-[-50%]'>
-          <img className='h-full w-full object-cover object-center rounded-full' src="https://www.shutterstock.com/image-photo/minion-celebrating-new-year-white-260nw-2557446605.jpg" alt="" />
-        </div>
 
-        <div className='text-center mt-10'>
-          <h4 className=' font-mono font-bold text-lg'>Noah Thompson</h4>
-          <p className='text-[10px] mx-4 font-light'>
-            Product Desinger who focuses on simplicity & usability
-          </p>
-        </div>
 
-        <div className='rounded-full h-10 w-10 absolute top-2 right-2 bg-white flex justify-center items-center'>
-          <i className="ri-add-line"></i>
-        </div>
-
-      <div className='flex gap-3 justify-center mt-4 text-center bg-gray-50 rounded-2xl'>
-          <div >
-            <h3 className='font-mono font-bold'>72.9K</h3>
-            <p className='text-[10px] mx-4 font-light'>Likes</p>
-          </div>
-
-          <div >
-            <h3 className='font-mono font-bold'>828</h3>
-            <p className='text-[10px] mx-4 font-light'>Posts</p>
-          </div>
-
-          <div >
-            <h3 className='font-mono font-bold'>342.9K</h3>
-            <p className='text-[10px] mx-4 font-light'>Views</p>
-          </div>
-      </div>
-
-    <div className='flex absolute bottom-0.5 w-full justify-center items-center gap-5 font-semibold text-xl'>
-      <i className="ri-instagram-line"></i>
-      <i className="ri-twitter-x-line"></i>
-      <i className="ri-threads-line"></i>
-    </div>
-
-      </div>
-    </div>
-  )
+  return 
+  <div>
+    users.map(function(elem){
+      <Card />
+    }
+  </div>
 }
 export default App
 

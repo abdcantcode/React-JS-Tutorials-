@@ -5,7 +5,7 @@ const App = () => {
     {
       "name": "Noah Thompson",
       "role": "Product Designer focused on simplicity & usability",
-      "profilePhoto": "https://images.unsplash.com/photo-1603415526960-f9e4b2dae5e6?crop=faces&fit=crop&w=200&h=200",
+      "profilePhoto": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=faces&fit=crop&w=200&h=200",
       "coverPhoto": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&h=300",
       "likes": "72.9K",
       "posts": "828",
@@ -15,7 +15,7 @@ const App = () => {
       "name": "Liam Carter",
       "role": "Product & UX Designer",
       "profilePhoto": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?crop=faces&fit=crop&w=200&h=200",
-      "coverPhoto": "https://images.unsplash.com/photo-1506015391300-4802dc74de2d?fit=crop&w=800&h=300",
+      "coverPhoto": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?fit=crop&w=800&h=300",
       "likes": "81.3K",
       "posts": "755",
       "views": "389.0K"
@@ -92,15 +92,17 @@ const App = () => {
       "posts": "910",
       "views": "418.0K"
     }
-  ]
+];
 
 
 
-  return 
-  <div>
-    users.map(function(elem){
-      <Card />
-    }
+
+
+
+  return <div className='flex gap-2 w-full'>
+    {users.map(function(elem){
+      return <Card user={elem}/>
+    })}
   </div>
 }
 export default App

@@ -29,11 +29,18 @@ const App = () => {
   let [num, setNum] = useState(0);
   let [king, setKing] = useState('Abdul Aziz');
   let [queen, setQueen] = useState('Alisha');
-  function changeKing(){
+  let [val, setVal] = useState(0);
+
+
+  function changeKing() {
     setKing('Abdullah');
   }
-  function changeQueen(){
+  function changeQueen() {
     setQueen('Nalla hai Abdullah');
+  }
+  function changeVal(){
+    let nextVal=Math.floor(Math.random()*100)
+    setVal(nextVal);
   }
 
   return (
@@ -54,6 +61,8 @@ const App = () => {
           Decrease Value
         </button>
       </div>
+
+
       <div id='two'>
         <h1>
           {king}
@@ -70,6 +79,12 @@ const App = () => {
         </button>
 
 
+      </div>
+
+
+      <div id='three'>
+        <h1>{val}</h1>
+        <button onClick={changeVal}>Ghapla kardo</button>
       </div>
 
     </div>

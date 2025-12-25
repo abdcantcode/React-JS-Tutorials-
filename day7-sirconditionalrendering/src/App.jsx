@@ -17,7 +17,6 @@ const App = () => {
     <div className='h-full w-full'>
       {users[0].gender==='male'?<Boy/>:<Girls/>}
       {users[1].gender==='male'?<Boy/>:<Girls/>}
-      
       {users[2].gender==='male'?<Boy/>:<Girls/>}
       {users[3].gender==='male'?<Boy/>:<Girls/>}
       {users[4].gender==='male'?<Boy/>:<Girls/>}

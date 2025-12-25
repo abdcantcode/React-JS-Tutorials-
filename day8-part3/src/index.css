@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height:100%;
+  width:100%;
+}
+.gendercard{
+  background: conic-gradient(red,blue,pink,green,yellow,orange,black,red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height:100px;
+  width: 100px;
+}

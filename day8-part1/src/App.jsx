@@ -30,6 +30,8 @@ const App = () => {
   let [king, setKing] = useState('Abdul Aziz');
   let [queen, setQueen] = useState('Alisha');
   let [val, setVal] = useState(0);
+  let [user, setUser] = useState(0);
+  let users = ['Abdullah', 'Aamer', 'Saleem'];
 
 
   function changeKing() {
@@ -38,8 +40,8 @@ const App = () => {
   function changeQueen() {
     setQueen('Nalla hai Abdullah');
   }
-  function changeVal(){
-    let nextVal=Math.floor(Math.random()*100)
+  function changeVal() {
+    let nextVal = Math.floor(Math.random() * 100)
     setVal(nextVal);
   }
 
@@ -86,6 +88,18 @@ const App = () => {
         <h1>{val}</h1>
         <button onClick={changeVal}>Ghapla kardo</button>
       </div>
+
+      <div id='four'>
+        <h1>{users[user]}</h1>
+        <button onClick={() => {
+          user < users.length - 1 ? setUser(user + 1) : alert("Out of index");
+        }}>Ghapla Time baby</button>
+      </div>
+
+      <div id='five'>
+
+      </div>
+
 
     </div>
   )

@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root,html,body{
+  height:100%;
+  width: 100%;
+}
+.men{
+  background-color: blue;
+  color:white;
+  height:fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+}
+.women{
+  background-color: pink;
+  color:white;
+  height:fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+}

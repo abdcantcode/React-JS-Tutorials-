@@ -8,8 +8,8 @@ html,body,#root{
   height:100%;
     
 }
-div{
-  height:5px;
-  width:5px;
+#one{
+  height:100px;
+  width:100px;
   background-color: red;
 }

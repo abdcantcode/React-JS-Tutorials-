@@ -26,24 +26,52 @@ import { useState } from 'react'
 import './index.css'
 
 const App = () => {
-  let [num,setNum]=useState(0);
-  
+  let [num, setNum] = useState(0);
+  let [king, setKing] = useState('Abdul Aziz');
+  let [queen, setQueen] = useState('Alisha');
+  function changeKing(){
+    setKing('Abdullah');
+  }
+  function changeQueen(){
+    setQueen('Nalla hai Abdullah');
+  }
+
   return (
     <div>
-      <h1>
-        {num}
-      </h1>
-      <button onClick={()=>{
-        setNum(num+1);
-      }}>
-        Increase Value
-      </button>
+      <div id='one'>
+        <h1>
+          {num}
+        </h1>
+        <button onClick={() => {
+          setNum(num + 1);
+        }}>
+          Increase Value
+        </button>
 
-      <button onClick={()=>{
-        setNum(num-1);
-      }}>
-        Decrease Value
-      </button>
+        <button onClick={() => {
+          setNum(num - 1);
+        }}>
+          Decrease Value
+        </button>
+      </div>
+      <div id='two'>
+        <h1>
+          {king}
+        </h1>
+        <button onClick={changeKing}>
+          Change King
+        </button>
+
+        <h1>
+          {queen}
+        </h1>
+        <button onClick={changeQueen}>
+          Change Queen
+        </button>
+
+
+      </div>
+
     </div>
   )
 }

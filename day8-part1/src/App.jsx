@@ -32,6 +32,7 @@ const App = () => {
   let [val, setVal] = useState(0);
   let [user, setUser] = useState(0);
   let users = ['Abdullah', 'Aamer', 'Saleem'];
+  let [marks,setMarks]=useState([95,40,33,56]);
 
 
   function changeKing() {
@@ -93,11 +94,29 @@ const App = () => {
         <h1>{users[user]}</h1>
         <button onClick={() => {
           user < users.length - 1 ? setUser(user + 1) : alert("Out of index");
-        }}>Ghapla Time baby</button>
+        }}>Ghapla Time baby </button>
       </div>
 
       <div id='five'>
-
+        {
+          marks.map(function(elem,idx){
+            return <h1>Marks of {idx+1} is {elem}  {elem<40?'FAIL':'PASS'}</h1>
+          })}
+          <button onClick={()=>{
+              let newMarks=marks.map(function(elem){
+                if(elem>95){
+                  return 100;
+                }
+                else if(elem>35 && elem<40){
+                  return 40;
+                }
+                else{
+                  return elem+5;
+                }
+                
+              })
+              setMarks(newMarks);
+          }}>Grace Dedo bhai gareeb ku </button>
       </div>
 
 

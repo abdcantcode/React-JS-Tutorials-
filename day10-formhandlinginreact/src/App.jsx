@@ -33,6 +33,9 @@ const App = () => {
         <button>Submit</button>
         
       </form>
+      {details.map(function(elem){
+        return <h1>{elem}</h1>
+      })}
     </div>
   )
 }

@@ -4,12 +4,14 @@ import { useState } from 'react';
 const App = () => {
 
   const [name,setName]=useState('');//Initially name ku '' rakhre empty nai rakh sakte
-  
+  const [details,setDetails]=useState([]);
   const submitHandler=(e)=>{
     e.preventDefault();//Tum uppar e ke badle u bhi leke niche u bhi rakh sakte they lekin dusri jagah pe jo hai niche udhar se e lena zaroori nai rehta, basically niche dono same aur uppar dono same 
     console.log("Form submitted")
-    
-
+    let copydets=[...details];//Aisa samjho details mein sab names aare
+    copydets.push(name);
+    setDetails(copydets);
+    console.log(copydets);
     setName('');
   }
   

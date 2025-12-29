@@ -19,7 +19,9 @@ const App = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={(e)=>{
+        submitHandler(e);
+      }}>
         <input type="text" 
         onChange={(e)=>{
           setName(e.target.value);
@@ -49,7 +51,7 @@ const App = () => {
           setDesc(e.target.value);
         }}
         value={desc}
-        placeholder='Enter your '
+        placeholder='Enter your description'
         required/>
 
         <button>Submit</button>

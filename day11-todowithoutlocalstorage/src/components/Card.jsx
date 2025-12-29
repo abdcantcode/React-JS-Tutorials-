@@ -10,7 +10,9 @@ const Card = (props) => {
         <h4 className='text-blue-400 font-semibold'>{props.info.profession}</h4>
         <p className='text-sm text-center'>{props.info.desc}
         </p>
-        <button className='bg-red-500 px-4 text-white active:scale-90 font-bold py-2 rounded-lg'>Remove</button>
+        <button onClick={()=>{
+          props.handler(props.id)
+        }} className='bg-red-500 px-4 text-white active:scale-90 font-bold py-2 rounded-lg'>Remove</button>
       </div>
   )
 }

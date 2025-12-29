@@ -12,18 +12,20 @@ const App = () => {
   function submitHandler(e){
     e.preventDefault(); //Preventing default form behaviour
 
-    let copyofdetails=[...details];
-    copyofdetails.push({name,profession,url,desc})
-    setDetails(copyofdetails);
-    console.log(copyofdetails);
-
-
+    setDetails([...details,{name,profession,url,desc}]);
+    
 
     setName('');  //After submission making those input tags go blank
     setProfession('');
     setDesc('');
     setUrl('');
+    console.log(details);
 
+  }
+  function handleRemove(idx){
+    let copyofdetails=[...details];
+    copyofdetails.splice(idx,1);
+    setDetails(copyofdetails);
   }
 
 
@@ -68,7 +70,7 @@ const App = () => {
       </form>
         <div className='flex gap-2 my-3'>
           {details.map(function(elem,idx){
-            return <Card key={idx}  info={elem}/>
+            return <Card handler={handleRemove} id={idx} key={idx}  info={elem}/>
           })}
        </div>
       

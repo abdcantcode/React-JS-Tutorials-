@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './index.css'
+import Card from './components/Card';
 const App = () => {
 
   const [name,setName]=useState('');
@@ -66,22 +67,10 @@ const App = () => {
         <button className='bg-emerald-500 px-16 py-2 rounded-lg font-bold active:scale-95 m-auto'>Submit</button>
       </form>
         <div className='flex gap-2 my-3'>
-
-        
-
-      <div className='flex flex-col gap-3 h-fit w-[22%] bg-white rounded-lg items-center py-4'>
-        <img className='object-cover object-center rounded-[50%] w-[80px] h-[80px] ' src="https://images.pexels.com/photos/15260732/pexels-photo-15260732.jpeg" alt="" />
-        <h3 className='text-[18px] font-bold'>Abdullah Aajaz</h3>
-        <h4 className='text-blue-400 font-semibold'>Developer</h4>
-        <p className='text-sm text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, magni?
-        </p>
-        <button className='bg-red-500 px-4 text-white active:scale-90 font-bold py-2 rounded-lg'>Remove</button>
-      </div>
-      
-
-
-
-        </div>
+          {details.map(function(elem,idx){
+            return <Card key={idx}  info={elem}/>
+          })}
+       </div>
       
       
 

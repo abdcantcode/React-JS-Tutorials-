@@ -1,28 +1,39 @@
-import React from 'react'
+import React from 'react';
 
-const Card = () => {
+function Card(props) {
+  
+
   return (
-    <div className='card'>
-      <div className='card-cont'>
-        <img src="https://kolzsticks.github.io/Free-Ecommerce-Products-Api/main/images/products/moisturizer.jpg" alt="" />
+    <div className="card">
+      <div className="card-cont">
+        <img src={props.elem.image} alt="" />
       </div>
-      <h1>Hydrating Facial Moisturizer</h1>
-      <div className='categories'>
-          <div className='capsule'><p>moisturizer</p></div>
-          <div className='capsule'><p>hydration</p></div>
-          <div className='capsule'><p>skincare</p></div>
-          <div className='capsule'><p>beauty</p></div>
+
+      <h1>{props.elem.name}</h1>
+
+      {/* ONE wrapper for all capsules */}
+      <div className="categories">
+        {props.elem.keywords.slice(0, 4).map(function (elem, idx) {
+          return (
+            <div key={idx} className="capsule">
+              <p>{elem}</p>
+            </div>
+          );
+        })}
       </div>
-      <p>This Hydrating Facial Moisturizer is expertly formulated to deeply nourish and hydrate your skin, providing lasting moisture and a smooth, radiant complexion. Ideal for daily use.</p>
-      <div className='bottom'>
-        <div> <h3>$120</h3></div>
-       <div><button>Add to Cart</button></div>
-        
+
+      <p>{props.elem.description}</p>
+
+      <div className="bottom">
+        <div>
+          <h3>${props.elem.priceCents / 100}</h3>
+        </div>
+        <div>
+          <button>Add to Cart</button>
+        </div>
       </div>
     </div>
-
-
-  )
+  );
 }
 
-export default Card
+export default Card;

@@ -1,0 +1,1 @@
+Localstorage->5-10 mb rehti bas 

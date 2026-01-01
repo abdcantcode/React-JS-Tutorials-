@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className='w-full p-5 bg-black h-full flex flex-col'>
-      <form className='flex gap-2 flex-wrap w-fit  w-full' onSubmit={(e)=>{
+      <form className='flex gap-2 flex-wrap  w-full' onSubmit={(e)=>{
         submitHandler(e);
       }}>
         <input className='border-2 w-[49%] border-white text-white rounded-lg p-2'  type="text" 

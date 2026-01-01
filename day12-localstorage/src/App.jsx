@@ -7,13 +7,19 @@ const App = () => {
   const [profession,setProfession]=useState('');
   const [url,setUrl]=useState('');
   const [desc,setDesc]=useState('');
-  let [details,setDetails]=useState([]);
+
+  let localdata=JSON.parse(localStorage.getItem('user-data')) || []
+  console.log(localdata);
+  let [details,setDetails]=useState(localdata);
 
   function submitHandler(e){
     e.preventDefault(); //Preventing default form behaviour
 
-    setDetails([...details,{name,profession,url,desc}]);
+    let finalDetails=[...details];
+    finalDetails.push({name,profession,url,desc});
     
+    setDetails(finalDetails)
+    localStorage.setItem('user-data',JSON.stringify(finalDetails));
 
     setName('');  //After submission making those input tags go blank
     setProfession('');
@@ -24,8 +30,18 @@ const App = () => {
   }
   function handleRemove(idx){
     let copyofdetails=[...details];
-    copyofdetails.splice(idx,1);
+
+    let conf=confirm("PAKKA DELETE KARDU KYA LALA");
+    if (conf){
+      copyofdetails.splice(idx,1);
+    }
+    else{
+      alert("NOT DELETED");
+    }
+    
     setDetails(copyofdetails);
+    localStorage.setItem('user-data',JSON.stringify(copyofdetails));
+    
   }
 
 

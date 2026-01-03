@@ -16,4 +16,7 @@ Toh tum woich App.jsx mein
 
 Atleast ek rehna path='/' warna errors aate
 
+Woh pages import karna zaroori hai woh elements 
+
 Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte
+

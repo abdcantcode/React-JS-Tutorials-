@@ -14,4 +14,6 @@ Toh tum woich App.jsx mein
   <Route path='/about' element={<About/>}>
 </Routes>
 
+Atleast ek rehna path='/' warna errors aate
+
 Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte

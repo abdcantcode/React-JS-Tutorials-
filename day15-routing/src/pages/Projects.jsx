@@ -1,7 +1,7 @@
 
 const Projects = () => {
   return (
-    <div className='underline text-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'> 
+    <div className='underline text-3xl flex items-center justify-center h-screen w-screen'> 
       <h1>My Projects</h1>
     </div>
   )

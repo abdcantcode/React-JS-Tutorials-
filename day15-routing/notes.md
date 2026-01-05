@@ -14,9 +14,11 @@ Toh tum woich App.jsx mein
   <Route path='/about' element={<About/>}>
 </Routes>
 
+Toh yeh jo apan karre woh basically CSR hai not SSR
+
 Atleast ek rehna path='/' warna errors aate
 
-Woh pages import karna zaroori hai woh elements 
+Woh pages import karna zaroori hai woh elements mein aare <Home /> types 
 
 Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte
 

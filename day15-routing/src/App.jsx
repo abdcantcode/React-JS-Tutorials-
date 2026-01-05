@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Kuchbhi from "./pages/Kuchbhi";
+import KuchBhiNahi from "./pages/KuchBhiNahi";
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
         <Route path='/projects' element={<Projects/>}/>
         {/*Ismein tum /projects/men bolke bhi bana sakte */}
         <Route path='/about/:id' element={<Kuchbhi/>}/>
+        <Route path='/projects/:bgn' element={<KuchBhiNahi/>}/>
+        <Route path='/projects/:bgn/aalu' element={<KuchBhiNahi/>}/>
+        {/*Idhar bas beech ka bgn ich hai dynamic */}
       </Routes>
     </div>
   );

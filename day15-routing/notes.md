@@ -25,3 +25,9 @@ Woh pages import karna zaroori hai woh elements mein aare <Home /> types
 Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte iske liye tumaku import bhi karna padhta link ku
 
 Agar tum chahre ki kuch change nai hona toh usku routes ke baher likho jaisa YT ka search change nai hota upon moving to different routes, udhar bhi waisich same rehta woh tum kar sakte
+
+<Route path='/about/:id' element={<Kuchbhi/>}/> Dynamic page banana bolto tum about ke baad kuch bhi likhlo woh page ku jaate
+
+Tum :id ki jagah kuch bhi rakh sakte aur udhar pass kar sakte laadleeee I mean id tum agar dere toh useParams() se call karke ek variable mein store kar sakte aur woh tumaku <Kuchbhi/> pe milta usse tumaku jo dikhana hai dikhao laadle
+
+Yeh work karta similar to apna props but with links essentially

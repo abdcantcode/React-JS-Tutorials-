@@ -22,6 +22,6 @@ Atleast ek rehna path='/' warna errors aate
 
 Woh pages import karna zaroori hai woh elements mein aare <Home /> types 
 
-Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte
+Reload nai hona bolto <a> ke badle <Link> use karna apan isse reload nai hota yeh react se milta ismein to='' use karte iske liye tumaku import bhi karna padhta link ku
 
 Agar tum chahre ki kuch change nai hona toh usku routes ke baher likho jaisa YT ka search change nai hota upon moving to different routes, udhar bhi waisich same rehta woh tum kar sakte

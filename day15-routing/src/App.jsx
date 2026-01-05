@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Kuchbhi from "./pages/Kuchbhi";
+import NotFound from "./pages/NotFound";
 import KuchBhiNahi from "./pages/KuchBhiNahi";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/projects/:bgn' element={<KuchBhiNahi/>}/>
         <Route path='/projects/:bgn/aalu' element={<KuchBhiNahi/>}/>
         {/*Idhar bas beech ka bgn ich hai dynamic */}
+        <Route path='/*' element={<NotFound/>}/>
       </Routes>
     </div>
   );

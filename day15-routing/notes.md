@@ -30,4 +30,7 @@ Agar tum chahre ki kuch change nai hona toh usku routes ke baher likho jaisa YT 
 
 Tum :id ki jagah kuch bhi rakh sakte aur udhar pass kar sakte laadleeee I mean id tum agar dere toh useParams() se call karke ek variable mein store kar sakte aur woh tumaku <Kuchbhi/> pe milta usse tumaku jo dikhana hai dikhao laadle
 
+Isku dynamic routing bolte aur nested dynamic routes bhi rehte
 Yeh work karta similar to apna props but with links essentially
+
+<Route path='/*' element={<NotFound/>}/> error handling waale page ku bhejne ke liye aisa karna padhta 

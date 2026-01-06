@@ -47,3 +47,10 @@ bolke style lagale re bhai
 </Route>
 
 This is nested routing aur ismein tumaku dusre end pe outlet likhna zaroori hai 
+
+let navigator=useNavigate()-> isse button click pe navigate kar sakte isku root pass karo
+
+<button className='border-2 border-black px-2 rounded-lg bg-red-500'onClick={()=>{
+          navigator('/contact');
+        }}
+        >Explore Courses</button>

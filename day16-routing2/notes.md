@@ -39,3 +39,11 @@ a.active{
 }
 
 bolke style lagale re bhai 
+
+<Route path='/contact' element={<Contact/>}>
+        {/*Nested routing aisa karna rehta aur contact page mein <Outlet/> rakhna padhta*/}
+          <Route path='/contact/kodex' element={<Kodex/>}/>
+          <Route path='/contact/koder' element={<Koder/>}/>
+</Route>
+
+This is nested routing aur ismein tumaku dusre end pe outlet likhna zaroori hai 

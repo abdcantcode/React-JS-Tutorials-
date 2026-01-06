@@ -24,4 +24,18 @@ Memory router
 Static router
 -> Server side rendering 
 
+Link kirrak hai lekin tum styling etc dena chahre toh navlink use karo 
+<NavLink 
+  to="/contact"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""
+  }
+>
+  CONTACT US
+</NavLink> yeh docs se mila
 
+a.active{
+
+}
+
+bolke style lagale re bhai 

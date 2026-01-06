@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Koder from './pages/Koder'
 import Kodex from './pages/Kodex'
+import AllCourses from './pages/AllCourses'
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}>
         {/*Nested routing aisa karna rehta aur contact page mein <Outlet/> rakhna padhta*/}
+          <Route path='/contact' element={<AllCourses/>}/>
           <Route path='/contact/kodex' element={<Kodex/>}/>
           <Route path='/contact/koder' element={<Koder/>}/>
         </Route>

@@ -1,0 +1,22 @@
+#root,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2{
+  color:blue;
+}
+h1{
+  color:red;
+}
+.navbar{
+  height: 40px;
+  width: 100%;
+  background-color: yellow;
+}

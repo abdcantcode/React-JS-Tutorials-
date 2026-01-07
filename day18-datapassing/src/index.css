@@ -1,0 +1,15 @@
+#root,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+  height: 100px;
+  width: 100%;
+  background-color: red;
+}
+.child{
+  height: 100px;
+  width: 100%;
+  background-color: blue;
+}

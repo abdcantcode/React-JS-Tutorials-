@@ -1,0 +1,18 @@
+import React, { createContext } from 'react'
+export const PostDataContext=createContext()
+const PostContext = (props) => {
+
+  
+  
+  let username='Abdullah'
+  return (
+    <div>
+      <PostDataContext.Provider value={username}>
+        {props.children}
+      </PostDataContext.Provider>
+      
+    </div>
+  )
+}
+
+export default PostContext

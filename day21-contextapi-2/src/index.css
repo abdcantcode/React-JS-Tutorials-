@@ -9,16 +9,28 @@
 }
 .navbar{
   background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 10%;
+  padding:10px;
   width: 100%;
 }
 .section{
   background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20%;
   height: 80%;
   width: 100%;
 }
 .footer{
   background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
   height: 10%;
   width: 100%;
 }

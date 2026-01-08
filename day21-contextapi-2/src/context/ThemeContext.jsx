@@ -2,11 +2,11 @@ import React, { createContext, useState } from 'react'
 export const ThemeContextSetter=createContext()
 const ThemeContext = (props) => {
   let [theme,setTheme]=useState('light')
-  let data=1;
+  
 
   return (
     <div className='app'>
-      <ThemeContextSetter.Provider value={data}>
+      <ThemeContextSetter.Provider value={[theme,setTheme]}>
       {props.children}
       </ThemeContextSetter.Provider>  
     </div>

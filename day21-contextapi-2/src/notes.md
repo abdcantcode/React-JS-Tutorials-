@@ -1,1 +1,3 @@
+******Handling usestate with context api
+
 Tum usestate pass karna hai toh tum setter aur value jo pass karre woh value={[text,setText]} aisa karke pass kar sakte lala. Tum woh text bhi pass kar sakte

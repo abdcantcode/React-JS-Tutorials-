@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
-const ProductContext = () => {
+import { createContext } from 'react-router-dom';
+export const ProductContextProvider=createContext()
+const ProductContext = (props) => {
   async function getData() {
     let data = await axios.get('https://fakestoreapi.com/products/');
     console.log(data);
@@ -8,9 +10,12 @@ const ProductContext = () => {
   useEffect(function () {
     getData()
   }, [])
+  
   return (
     <div>
-
+      <ProductContextProvider.Provider>
+      {props.children}
+      </ProductContextProvider>
     </div>
   )
 }

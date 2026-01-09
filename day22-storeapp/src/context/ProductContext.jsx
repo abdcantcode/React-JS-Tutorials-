@@ -1,22 +1,25 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
-import { createContext } from 'react-router-dom';
-export const ProductContextProvider=createContext()
+import { createContext } from 'react'
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const ProductContextProvider = createContext()
+
 const ProductContext = (props) => {
+
   async function getData() {
-    let data = await axios.get('https://fakestoreapi.com/products/');
-    console.log(data);
+    let data = await axios.get('https://fakestoreapi.com/products/')
+    console.log(data)
   }
-  useEffect(function () {
+
+  useEffect(() => {
     getData()
   }, [])
-  
+
   return (
-    <div>
-      <ProductContextProvider.Provider>
+    <ProductContextProvider.Provider>
       {props.children}
-      </ProductContextProvider>
-    </div>
+    </ProductContextProvider.Provider>
   )
 }
 

@@ -36,19 +36,22 @@ button{
   width: 100%;
   display:flex;
   flex-wrap: wrap;
-  gap:10px
+  gap:10px;
+  padding:5px;
   
 
 }
 .product{
   height: 250px;
   width: 200px;
-  background-color: red;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding:10px;
+  border-radius: 10px;
+  background-color: rgb(125, 121, 121);
 }
 .product img{
   height: 150px;
@@ -57,4 +60,8 @@ button{
 }
 .product h1{
   font-size: 15px;
+  color: black;
+}
+a{
+  text-decoration: none;
 }

@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <div className='product-container'>
       {ProductData.map(function(elem){
-        return <a href="">
+        return <a href="" target='_blank'>
           <div className='product'>
             <img src={elem.image} alt="" />
           <h1>{elem.title}</h1>

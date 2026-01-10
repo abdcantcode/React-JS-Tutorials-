@@ -1,3 +1,9 @@
-******Handling usestate with context api
+# Handling useState with Context API
 
-Tum usestate pass karna hai toh tum setter aur value jo pass karre woh value={[text,setText]} aisa karke pass kar sakte lala. Tum woh text bhi pass kar sakte
+Agar tum `useState` ko Context API ke through pass karna chahte ho,
+toh tum **state aur setter dono** pass kar sakte ho.
+
+## Example
+
+```jsx
+const [text, setText] = useState("");

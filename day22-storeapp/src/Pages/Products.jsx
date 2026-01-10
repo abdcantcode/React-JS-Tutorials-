@@ -1,18 +1,19 @@
 import React, { useContext } from 'react'
 import { ProductContextProvider } from '../context/ProductContext'
+import { Link } from 'react-router-dom'
 
 const Products = () => {
   let ProductData=useContext(ProductContextProvider)
-  console.log(ProductData)
+  
   return (
     <div className='product-container'>
-      {ProductData.map(function(elem){
-        return <a href="" target='_blank'>
+      {ProductData.map(function(elem,idx){
+        return <Link href="" key={idx} target='_blank' to={`/product/${elem.id}`}>
           <div className='product'>
             <img src={elem.image} alt="" />
           <h1>{elem.title}</h1>
           </div>
-        </a>
+        </Link>
       })}
     </div>
   )

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { createContext } from 'react'
 
@@ -6,10 +6,11 @@ import { createContext } from 'react'
 export const ProductContextProvider = createContext()
 
 const ProductContext = (props) => {
-
+  let [productData,setProductData]=useState([]);
   async function getData() {
-    let data = await axios.get('https://fakestoreapi.com/products/')
-    console.log(data)
+    let apidata = await axios.get('https://fakestoreapi.com/products/')
+    
+    
   }
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const ProductContext = (props) => {
   }, [])
 
   return (
-    <ProductContextProvider.Provider>
+    <ProductContextProvider.Provider value={productData}>
       {props.children}
     </ProductContextProvider.Provider>
   )

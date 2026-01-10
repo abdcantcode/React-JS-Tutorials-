@@ -5,10 +5,10 @@ const Products = () => {
   let ProductData=useContext(ProductContextProvider)
   console.log(ProductData)
   return (
-    <div>
+    <div className='product-container'>
       {ProductData.map(function(elem){
         return <a href="">
-          <div>
+          <div className='product'>
             <img src={elem.image} alt="" />
           <h1>{elem.title}</h1>
           </div>

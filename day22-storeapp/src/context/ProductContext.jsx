@@ -9,11 +9,11 @@ const ProductContext = (props) => {
   let [productData,setProductData]=useState([]);
   async function getData() {
     let apidata = await axios.get('https://fakestoreapi.com/products/')
-    
-    
+    setProductData(apidata.data)
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     getData()
   }, [])
 

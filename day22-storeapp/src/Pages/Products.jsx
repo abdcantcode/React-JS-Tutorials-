@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ProductContextProvider } from '../context/ProductContext'
 
 const Products = () => {
+  let ProductData=useContext(ProductContextProvider)
+  console.log(ProductData)
   return (
     <div>
-      <h1>Poore Products</h1>
+      {ProductData.map(function(elem){
+        return <a href="">
+          <div>
+            <img src={elem.image} alt="" />
+          <h1>{elem.title}</h1>
+          </div>
+        </a>
+      })}
     </div>
   )
 }

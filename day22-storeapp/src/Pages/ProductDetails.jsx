@@ -1,19 +1,24 @@
-import React, { useContext } from 'react'
-import { ProductContextProvider } from '../context/ProductContext'
+import React, { useContext } from 'react';
+import { ProductContextProvider } from '../context/ProductContext';
 import { useParams } from 'react-router-dom';
 
 const ProductDetails = () => {
-  let data=useContext(ProductContextProvider);
-  let id=useParams();
-  console.log(data);
-  console.log(id);
-  console.log(data[0])
-  return (
-    <div>
-      <h1></h1>
-      
-    </div>
-  )
-}
+  const data = useContext(ProductContextProvider);
+  const { id } = useParams();
 
-export default ProductDetails
+  console.log(id);
+
+  let selectedData=data.find((elem)=>elem.id==id)
+
+  console.log(selectedData);
+
+  return (
+    
+    <div className='product'>
+            <img src={selectedData.image} alt="" />
+          <h1>{selectedData.title}</h1>
+    </div>
+  );
+};
+
+export default ProductDetails;

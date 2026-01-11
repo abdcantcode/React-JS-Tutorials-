@@ -7,6 +7,7 @@ export const ProductContextProvider = createContext()
 
 const ProductContext = (props) => {
   let [productData,setProductData]=useState([]);
+  
   async function getData() {
     let apidata = await axios.get('https://fakestoreapi.com/products/')
     setProductData(apidata.data)
